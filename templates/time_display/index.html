@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Display App</title>
+	<!-- using static will start the path inside of our apps static folder, and then then we assign the rest of the path. !-->
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'time_display/css/style.css' %}">
+</head>
+<body>
+	<div class="text">The current date and time:</div>
+	<div class="line">{{time}}</div>
+
+</body>
+</html>
